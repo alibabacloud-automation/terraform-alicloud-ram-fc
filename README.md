@@ -1,6 +1,6 @@
-Terraform module which creates RAM&FCS on Alibaba Cloud
+Terraform module which creates RAM&FC on Alibaba Cloud
 
-terraform-alicloud-ram-vpc
+terraform-alicloud-ram-fc
 =====================================================================
 
 English | [简体中文](README-CN.md)
@@ -17,8 +17,8 @@ These types of resources are supported:
 
 ```hcl
 module "example" {
-  source = "terraform-alicloud-modules/fcs-vpc/alicloud"
-  name   = "tf-fcs-vpc"
+  source = "terraform-alicloud-modules/ram-fc/alicloud"
+  name   = "tf-ram-fc"
 }
 ```
 
@@ -45,7 +45,7 @@ module "example" {
 If you have any problems when using this module, please opening
 a [provider issue](https://github.com/aliyun/terraform-provider-alicloud/issues/new) and let us know.
 
-**Note:** There does not recommend to open an issue on this repo.
+**Note:** There does not recommend opening an issue on this repo.
 
 ## Authors
 
