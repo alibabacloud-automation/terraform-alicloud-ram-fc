@@ -1,19 +1,37 @@
+##############################################################
+#variables for alicloud_ram_role
+##############################################################
 variable "name" {
   description = "The specification of module name."
   type        = string
-  default     = "role_name"
+  default     = ""
+}
+
+variable "document" {
+  description = "Authorization strategy of the RAM role."
+  type        = string
+  default     = ""
 }
 
 variable "ram_role_description" {
   description = "The specification of module ram role description."
   type        = string
-  default     = "this is a ram role test"
+  default     = ""
 }
 
+variable "force" {
+  description = "This parameter is used for resource destroy"
+  type        = bool
+  default     = false
+}
+
+##############################################################
+#variables for alicloud_ram_role_policy_attachment
+##############################################################
 variable "policy_name" {
   description = "The specification of module ram role description."
   type        = string
-  default     = "AliyunLogFullAccess"
+  default     = ""
 }
 
 variable "policy_type" {
@@ -22,10 +40,13 @@ variable "policy_type" {
   default     = "System"
 }
 
+##############################################################
+#variables for alicloud_fc_service
+##############################################################
 variable "fc_service_description" {
   description = "The specification of module fc service description."
   type        = string
-  default     = "tf unit test"
+  default     = ""
 }
 
 variable "logstore" {

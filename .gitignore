@@ -1,6 +1,3 @@
-# used for testing
-*.tfvars
-
 # Compiled files
 *.tfstate
 *.tfstate.backup
@@ -21,6 +18,6 @@
 # others
 *.bak
 *.bk
-
+**/.terraform/*
 .terraform.lock.hcl
 .terraform.tfstate.lock.info
