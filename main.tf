@@ -1,23 +1,8 @@
 resource "alicloud_ram_role" "default" {
   name        = var.name
-  document    = <<EOF
-  {
-      "Statement": [
-        {
-          "Action": "sts:AssumeRole",
-          "Effect": "Allow",
-          "Principal": {
-            "Service": [
-              "fc.aliyuncs.com"
-            ]
-          }
-        }
-      ],
-      "Version": "1"
-  }
-  EOF
+  document    = var.document
   description = var.ram_role_description
-  force       = true
+  force       = var.force
 }
 
 resource "alicloud_ram_role_policy_attachment" "default" {
