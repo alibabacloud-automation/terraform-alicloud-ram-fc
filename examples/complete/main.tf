@@ -1,5 +1,6 @@
 module "sls" {
   source                      = "terraform-alicloud-modules/sls/alicloud"
+  version                     = "2.0.0"
   project_name                = var.name
   store_name                  = var.log_store_name
   store_shard_count           = var.store_shard_count
